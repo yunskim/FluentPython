@@ -12,5 +12,5 @@ print(sorted(fruits, key=len, reverse=True))
 print(fruits)
 fruits.sort()
 print(fruits)
-
+ 
 

@@ -2,3 +2,6 @@
 .ipynb_checkpoints/
 Untitled.ipynb
 test.py
+/chapter02/floats.bin
+/chapter02/floats-10M.npy
+/chapter02/np_floats.txt

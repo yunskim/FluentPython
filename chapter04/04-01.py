@@ -8,3 +8,6 @@ print(len(b))
 
 print(b.decode('utf8'))
 print(len(b.decode('utf8')))
+
+
+
