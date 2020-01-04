@@ -22,7 +22,33 @@ print(type(factorial))
 3) 함수를 map함수의 parameter로 전달한다
 '''
 
+fruits = ['strawberry', 'fig', 'apple', 'cherry', 'raspberry', 'banana']
+print(sorted(fruits, key=len))
+
 fact = factorial
 print(fact)
 print(fact(5))
+# map(function, data)
 print(list(map(fact, range(11))))
+
+def reversed(word):
+    return word[::-1]
+
+print(reversed('testing'))
+print(sorted(fruits, key=reversed))
+
+
+# 5.2.1 map(), filter(), reduce()의 대안
+# map, filter, reduce를 사용할 수도 있지만
+# 단순히 list를 만든다면 comprehensive list를 사용하세요
+print(list(map(fact, range(6))))
+print([fact(n) for n in range(6)])
+
+print(list(map(factorial, filter(lambda n: n % 2, range(6)))))
+print([factorial(n) for n in range(6) if n % 2])
+
+# reduce는 처음이라
+from functools import reduce
+from operator import add
+print(reduce(add, range(100)))
+print(sum(range(100)))
