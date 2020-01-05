@@ -18,5 +18,5 @@ my_file = open('dummy', 'w')
 
 for expression in expressions.split():
     value = eval(expression)
-    print(expression.rjust(30), '->', repr(value))
+    print(expression.rjust(30), '->', repr(value)) # rjust는 오른쪽을 기준으로 정렬하고 왼쪽에 패딩을 주는 함수
 
