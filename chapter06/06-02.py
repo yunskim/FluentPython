@@ -52,7 +52,7 @@ light는 on, off 명령에 따라 작업을 수행하는 receiver이다.
 '''
 
 class MacroCommand:
-    """명령 리스트를 샐행하는 명령"""
+    """명령 리스트를 실행하는 명령"""
     def __init__(self, commands):
         self.commands = list(commands)
 
