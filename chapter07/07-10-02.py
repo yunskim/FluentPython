@@ -14,3 +14,16 @@ def clock(fmt=DEFAULT_FMT):
             return _result
         return clocked
     return decorate
+
+
+
+if __name__ == '__main__':
+
+    @clock()  # <11>
+    def snooze(seconds):
+        time.sleep(seconds)
+
+    for i in range(3):
+        snooze(.123)
+
+# END CLOCKDECO_PARAM
